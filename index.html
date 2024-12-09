@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>L_Barokah</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon1.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Active
+  * Template URL: https://bootstrapmade.com/active-bootstrap-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/logo2.png" alt="" width="60" height="90">
+        <h1 class="sitename">SeatCover.</h1>
+      </a>
+
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#rincianModal">
+              Booking</a></li>
+          <li class="dropdown"><a href="#"><span>Lainnya</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Testimoni</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#">View License</a></li>
+              <li class="dropdown"><a href="#"><span>Contact</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="https://wa.me/62882006751568">Whatsapp</a></li>
+                  <li><a href="https://www.instagram.com/handika_rizaal">Instagram</a></li>
+                  <li><a href="https://www.facebook.com/profile.php?id=61553377364639">Facebook</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Modal -->
+    <div class="modal fade" id="rincianModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-3" id="exampleModalLabel">Data Pemesanan</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="#" onsubmit="sendMessageToWhatsapp()">
+
+              <div class="mb-3">
+                <label>Nama:</label>
+                <input type="text" class="form-control" id="nama" />
+              </div>
+
+              <div class="mb-3">
+                <label>Alamat:</label>
+                <textarea type="message-text" class="form-control" id="alamat"></textarea>
+              </div>
+
+              <div class="mb-3">
+                <label>Mobil:</label>
+                <input type="text" class="form-control" id="mobil" />
+              </div>
+
+              <div class="mb-3">
+                <label>Tahun Mobil:</label>
+                <input type="text" class="form-control" id="tahun" />
+              </div>
+
+              <div class="mb-3">
+                <label>Tipe Mobil:</label>
+                <input type="text" class="form-control" id="tipe" />
+              </div>
+
+
+              <div class="mb-3">
+                <label>Pilihan Bahan:</label>
+                <input type="text" class="form-control" id="bahan" />
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary"> Kirim Pesan </button>
+
+              </div>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+
+    <!-- modal end -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-lg-7 mb-5 mb-lg-0 order-lg-2" data-aos="fade-up" data-aos-delay="400">
+            <div class="swiper init-swiper">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  },
+                  "breakpoints": {
+                    "320": {
+                      "slidesPerView": 1,
+                      "spaceBetween": 40
+                    },
+                    "1200": {
+                      "slidesPerView": 1,
+                      "spaceBetween": 1
+                    }
+                  }
+                }
+              </script>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="assets/img/img_h_6.jpg" alt="Image" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/img_h_7.jpg" alt="Image" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/img_h_8.jpg" alt="Image" class="img-fluid">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="col-lg-4 order-lg-1">
+            <h1 class="mb-4" data-aos="fade-up">
+              Sarung Jok Mobil L_Barokah
+            </h1>
+            <p data-aos="fade-up">
+              Jangan sampai perjalanan anda menjadi kurang nyaman karena interiornya yang mudah kotor atau bahkan sudah
+              bau sehingga menyebabkan anda merasa capek, atau anda bosan karena menggunakan kain...??
+              <br>
+              <br>
+              Rubah jok mobil anda menjadi makin nyaman mudah dibersihkan dengan melindungi jok mobil anda dengan sarung
+              jok premium yang berkualitas dan Presisi.
+            </p>
+            <p class="mt-5" data-aos="fade-up">
+              <a href="https://api.whatsapp.com/send?phone=62882006751568" class="btn btn-get-started">Ambil
+                Promo!!!</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section><!-- /About Section -->
+
+    <!-- About 2 Section -->
+    <section id="about-2" class="about-2 section light-background">
+
+      <div>
+        <div class="content">
+          <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-5 col-lg-4 col-xl-4 order-lg-2 offset-xl-1 mb-4">
+              <div class="img-wrap text-center text-md-left" data-aos="fade-up" data-aos-delay="100">
+                <div class="img">
+                  <img src="assets/img/img_v_3.jpg" alt="circle image" class="img-fluid">
+                </div>
+              </div>
+            </div>
+
+            <div class="offset-md-0 offset-lg-1 col-sm-12 col-md-5 col-lg-5 col-xl-4" data-aos="fade-up">
+              <div class="px-3">
+                <h1 class="content-title text-start fw-bold">
+                  Apakah anda pernah atau sedang seperti ini??
+                </h1>
+                <p class="lead fw-semibold">1. Takut kain asli kotor?</p>
+                <p class="lead fw-semibold">2. Mau jok dan interior jd mudah dibersihkan?</p>
+                <p class="lead fw-semibold">3. Mau jok dan interiornya jd bagus dan rapi?</p>
+                <p class="lead fw-semibold">4. Bingung dan ragu kemana bikin jok?</p>
+                <p class="lead fw-semibold">5. Takut setelah bikin jok hasilnya jelek dan dan kemahalan?</p>
+                <p class="lead fw-semibold"> 6. Bosen dengan interior itu-itu aja?</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /About 2 Section -->
+
+
+    <!-- Blog Posts Section -->
+    <section id="blog-posts" class="blog-posts section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h1>KEUNGGULAN MEMILIH TOKO KAMI</h1>
+      </div><!-- End Section Title -->
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="post-entry" data-aos="fade-up" data-aos-delay="100">
+              <a href="#" class="thumb d-block"><img src="assets/img/img_h_4.jpg" alt="Image"
+                  class="img-fluid rounded"></a>
+
+              <div class="post-content">
+                <div class="meta">
+                  <a href="#" class="cat">Development</a> •
+                  <span class="date">July 20, 2020</span>
+                </div>
+                <h3>
+                  <p> 1. Garansi Jahitan sampai dengan 3 tahun</p>
+                  <p> 2. Keaslian bahan dijamin, Presisi, Berkualitas</p>
+                  <p> 3. Harga kompetitif mulai dari 900 ribuan</p>
+                </h3>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="post-entry" data-aos="fade-up" data-aos-delay="200">
+              <a href="#" class="thumb d-block"><img src="assets/img/img_h_2.jpg" alt="Image"
+                  class="img-fluid rounded"></a>
+
+              <div class="post-content">
+                <div class="meta">
+                  <a href="#" class="cat">Development</a> •
+                  <span class="date">July 20, 2020</span>
+                </div>
+                <h3>
+                  <p> 4. Harga kompetitif mulai dari 1 jutaan</p>
+                  <p> 5. Lokasi strategis </p>
+                  <p> 6. Tenaga profesional yang sudah berpengalaman​</p>
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12 col-lg-4">
+            <div class="post-entry" data-aos="fade-up" data-aos-delay="300">
+              <a href="#" class="thumb d-block"><img src="assets/img/img_h_3.jpg" alt="Image"
+                  class="img-fluid rounded"></a>
+
+              <div class="post-content ">
+                <div class="meta">
+                  <a href="#" class="cat">Development</a> •
+                  <span class="date">July 20, 2020</span>
+                </div>
+                <h3>
+                  <p>7. Banyak refrensi model</p>
+                  <p>8. Melayani Pemasangan berbagai Kota di Jawa Tengah</p>
+                  <p>9. Berkerjasama dengan beberapa mekanik pemasangan di Kota di Jawa Tengah </p>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Blog Posts Section -->
+
+
+    <!-- Tabs Section -->
+    <section id="tabs" class="tabs section light-background">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h1>PILIHAN BAHAN di TOKO KAMI</h1>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gap-x-lg-12 justify-content-center">
+          <div class="col-lg-12 js-custom-dots text-center">
+
+            <div class="col-lg-12">
+              <div class="swiper init-swiper-tabs">
+                <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoHeight": true,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  },
+                  "breakpoints": {
+                    "320": {
+                      "slidesPerView": 1,
+                      "spaceBetween": 40
+                    },
+                    "1200": {
+                      "slidesPerView": 1,
+                      "spaceBetween": 1
+                    }
+                  }
+                }
+              </script>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="assets/img/bahan/myo1.jpg" alt="Image" class="img-fluid">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/bahan/cherroke2.jpg" alt="Image" class="img-fluid">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/bahan/vitz3.jpg" alt="Image" class="img-fluid">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/bahan/Zeuz4.jpg" alt="Image" class="img-fluid">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/bahan/mbtech5.jpg" alt="Image" class="img-fluid">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/bahan/nappa2.jpg" alt="Image" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section><!-- /Tabs Section -->
+
+
+
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <p>Happy Customers</p>
+        <h2>Testimonials</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up">
+        <div class="row justify-content-center">
+          <div class="col-lg-7">
+            <div class="swiper init-swiper">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  },
+                  "breakpoints": {
+                    "320": {
+                      "slidesPerView": 1,
+                      "spaceBetween": 40
+                    },
+                    "1200": {
+                      "slidesPerView": 1,
+                      "spaceBetween": 1
+                    }
+                  }
+                }
+              </script>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="testimonial mx-auto">
+                    <figure >
+                      <img src="whatsapp/testimoni3.jpg" alt="Image" class="img-fluid">
+                    </figure>                  
+                    </blockquote>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial mx-auto">
+                    <figure>
+                      <img src="whatsapp/testimoni1.jpg" alt="Image" class="img-fluid">
+                    </figure>                   
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial mx-auto">
+                    <figure >
+                      <img src="whatsapp/testimoni.jpg" alt="Image" class="img-fluid">
+                    </figure>
+                   </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial mx-auto">
+                    <figure >
+                      <img src="whatsapp/testimoni4.jpg" alt="Image" class="img-fluid">
+                    </figure>
+                   </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Testimonials Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
+          <div class="widget">
+            <h3 class="widget-heading">Tentang Kami.</h3>
+            <p class="mb-4">
+              Selalu Mengutamakan Kenyamanan dan Keprecayaan Pelanggan
+            </p>
+            <p class="mb-0">
+              <a href="https://wa.me/62882006751568" class="btn-learn-more">Whatsapp</a>
+            </p>
+          </div>
+        </div>
+       
+        <div class="col-md-6 col-lg-3 pl-lg-5">
+          <div class="widget">
+            <h3 class="widget-heading">Address</h3>
+            <ul class="list-unstyled footer-blog-entry">
+              <li>Jl. Erlangga, Kaliaang dua, Langensari, Kec. Ungaran Barat, Kabupaten Semarang, Jawa Tengah 50518                
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 pl-lg-5">
+          <div class="widget">
+            <h3 class="widget-heading">Contact</h3>
+            <ul class="list-unstyled social-icons light mb-3">
+              <li>
+                <a href="https://www.facebook.com/profile.php?id=61553377364639"><span class="bi bi-facebook"></span></a>
+              </li>     
+              <li>
+                <a href="https://www.instagram.com/handika_rizaal"><span class="bi bi-instagram"></span></a>
+              </li>
+              <li>
+                <a href="https://wa.me/62882006751568"><span class="bi bi-whatsapp"></span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright d-flex flex-column flex-md-row align-items-center justify-content-md-between">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">L_Barokah SeatCover.</strong> <span>All Rights Reserved</span></p>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+         
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
